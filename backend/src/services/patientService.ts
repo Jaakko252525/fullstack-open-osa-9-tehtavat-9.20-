@@ -24,10 +24,11 @@ import { NonSensitiveDiaryEntry, PatientEntry } from '../types/patientTypes';
 
 
 // get request for one patient
-export const getOnePatient = (id: string): PatientEntry[] => {
-
-    // findin patient with id
-    const patient = patients.filter(p => p.id === id);
+// services/patientService.ts
+export const getOnePatient = (id: string): PatientEntry | undefined => {
+    // Find patient with the given id
+    const patient = patients.find(p => p.id === id);
+    console.log('entryyyyyy', patient?.entries); // `patient` will be an object or undefined, so accessing `.entries` should work correctly.
     return patient;
 };
 

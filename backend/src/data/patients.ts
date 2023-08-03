@@ -10,7 +10,6 @@
 
 
 
-
 import { PatientEntry } from "../types/patientTypes";
 
 
@@ -23,7 +22,15 @@ const data: PatientEntry[] = [
         "ssn": "090786-122X",
         "gender": "male",
         "occupation": "New york city cop",
-        "entries": []
+        "entries": [
+            {
+                id: 'entry1',
+                type: 'HealthCheck',
+                description: 'Routine health checkup',
+                date: '2023-08-01',
+                specialist: 'Dr. Smith',
+            }
+        ]
     },
     {
         "id": "d2773598-f723-11e9-8f0b-362b9e155667",

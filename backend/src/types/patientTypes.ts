@@ -7,11 +7,11 @@
 
 
 
-
+//importing shit
+import { Entry } from "./diagnoseTypes";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface Entry {
-}
+
 
 
 
